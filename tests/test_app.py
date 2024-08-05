@@ -55,7 +55,7 @@ class AppTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 204)
 
     def test_product_delete_non_existing(self):
-        product_id_not_in_db = 999999
+        product_id_not_in_db = 3
         response = self.app.delete(f"/products/{product_id_not_in_db}")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json["error"], "Product not found")
