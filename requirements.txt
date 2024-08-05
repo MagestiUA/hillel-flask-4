@@ -1,3 +1,5 @@
 flask==3.0.3
 requests==2.32.3
 peewee==3.17.6
+typing_extensions==4.12.2
+pydantic==2.8.2
